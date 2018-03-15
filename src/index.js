@@ -5,8 +5,15 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import axios from 'axios';
 
+axios.defaults.baseURL = 'https://jsonplaceholder.typicode.com';
+axios.defaults.headers.common['Authorization'] = 'AUTH TOKEn FROM ME';
+axios.defaults.headers.common['WHAAAATTTT'] = 'SAY WHAAAAT!!!!';
+axios.defaults.headers.common['User-Agent'] = 'dAH FOX';
+/*
+axios.defaults.headers.common['I can put anything in here'] = 'ANYTHING AT ALL ???';
+*/
 
-
+console.log(axios.defaults.headers);
 
 let requerstInterceptor = axios.interceptors.request.use(request => {
   console.log(request);
