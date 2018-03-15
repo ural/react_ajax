@@ -21,6 +21,7 @@
   outline: none;
   padding: 12px 20px;
   background: rgba(255, 88, 13, 0.8);
+  font-size: 2rem;
 }
 
 .Edit button:hover,
