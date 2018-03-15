@@ -29,29 +29,28 @@ class Blog extends Component {
 
   selectPost = (id) => {
     this.setState({selectedPostId: id});
-    console.log(this.state.selectedPostId);
   };
 
   render() {
 
-   const posts = this.state.posts.map(post => {
-     return <Post
-              key={post.id}
-              title={post.title}
-              author={post.author}
-              clicked={() => this.selectPost(post.id)}
-            />;
-   });
+    const posts = this.state.posts.map(post => {
+      return <Post
+        key={post.id}
+        title={post.title}
+        author={post.author}
+        clicked={() => this.selectPost(post.id)}
+      />;
+    });
 
     return (
       <div>
         <section className="Posts">
-          { posts }
+          {posts}
         </section>
 
 
         <section>
-          <FullPost id={this.state.selectedPostId} />
+          <FullPost id={this.state.selectedPostId}/>
         </section>
         <section>
           <NewPost/>
