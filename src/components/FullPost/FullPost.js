@@ -22,7 +22,7 @@ class FullPost extends Component {
   }
 
   render() {
-    let post = <h2 style={{textAlign: 'center'}}>Please select a Post!</h2>;
+    let post = <h2 style={{textAlign: 'center', color: '#f90'}}>Please select a Post!</h2>;
 
     if (this.props.id) {
       post = <h3 style={{textAlign: 'center'}}>LOADING ...<i className="fas fa-spinner"></i></h3>;

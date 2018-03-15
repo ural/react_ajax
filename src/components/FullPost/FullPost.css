@@ -16,11 +16,11 @@
 }
 
 .Edit button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    outline: none;
-    color: #fa923f;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 12px 20px;
+  background: rgba(255, 88, 13, 0.8);
 }
 
 .Edit button:hover,
