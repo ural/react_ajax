@@ -1,14 +1,18 @@
 .Post {
-    width: 100px;
-    padding: 16px;
-    text-align: center;
-    border: 1px solid #eee;
-    box-shadow: 0 2px 3px #ccc;
-    margin: 10px;
-    box-sizing: border-box;
-    cursor: pointer;
-    overflow: hidden;
-    background: #aaa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 22%;
+  padding: 16px;
+  text-align: center;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px #ccc;
+  margin: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  background: #aaa;
 }
 
 .Post:hover,
@@ -27,5 +31,5 @@
   width: 60px;
   height: 60px;
   text-align: center;
-  line-height: 60px;
+  line-height: 58px;
 }
